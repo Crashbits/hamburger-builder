@@ -11,15 +11,16 @@
   },
   "env": {
     "browser": true,
-    "es6": true,
-    "jest": true
+    "commonjs": true,
+    "node": true,
+    "es6": true
   },
-  "extends": ["airbnb", "plugin:prettier/recommended"],
+  "extends": ["eslint-config-airbnb", "plugin:prettier/recommended", "prettier/react"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
   },
-  "plugins": ["react"],
+  "plugins": ["prettier", "react"],
   "rules": {
     "max-len": ["error", { "code": 100 }],
     "prefer-promise-reject-errors": ["off"],
