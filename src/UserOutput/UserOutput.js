@@ -3,7 +3,7 @@ import './UserOutput.css';
 
 const userOutput = props => {
   return (
-    <div className="UserOutput" onClick={props.clicked}>
+    <div className="UserOutput" onDoubleClick={props.clicked}>
       <p>Username: {props.username}</p>
       <p>Lives in: {props.city}</p>
     </div>
